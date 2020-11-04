@@ -1,0 +1,19 @@
+实体类，就是对于数据库中的表的互相映射的类
+对应数据库中的9个表
+有9个实体类：User Category Property Product ProductImage PropertyValue Review Order OrderItem
+
+
+实体类中
+Category -- Product -- ProductImage
+Order -- OrderItem
+互相包含多对一关系与一对多关系
+
+Category - Property
+Property - PropertyValue
+Product - PropertyValue
+Product - Review
+User - Review
+User - Order
+User - OrderItem
+Product -OrderItem
+只包含多对一关系
